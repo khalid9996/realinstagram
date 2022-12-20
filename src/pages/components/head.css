@@ -1,0 +1,43 @@
+.head {
+  height: 7vh;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo1 span {
+  user-select: none;
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.logo1 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 32%;
+}
+
+.logo2 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 32%;
+}
+
+.icon1 {
+  margin-left: 2vh;
+  margin-right: 1vh;
+  height: 4vh;
+  width: 4vh;
+  color: white;
+}
+
+.icon2 {
+  margin-right: 2vh;
+  height: 4vh;
+  width: 4vh;
+  color: white;
+}
