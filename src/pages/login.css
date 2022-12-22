@@ -9,8 +9,8 @@
 
 
 .login__window {
-    height: 600px;
-    width: 500px;
+    height: 500px;
+    width: 450px;
     background-color: white;
     border-radius: 8px;
 }
@@ -44,16 +44,15 @@
     color: #cd486b;
 }
 
-.input__div {
-    width: 70%;
+.input__login__div {
+    width: 80%;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    margin-bottom: 5j0px;
-
+    margin-top: 10px;
 }
 
-.input__div > input {
+.input__login__div > input {
     padding: 10px;
     border-radius: 4px;
     width: 70%;
@@ -61,14 +60,14 @@
     border: 1px solid rgb(56, 56, 56);
 }
 
-.input__div > span {
+.input__login__div > span {
     font-size: large;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .login__window > form > button {
-    width: 70%;
-    margin-top: 25px;
+    width: 80%;
+    margin-top: 30px;
     padding: 10px;
     border-radius: 6px;
     border: none;
@@ -81,4 +80,3 @@
 .login__window > form > button:hover {
     background-color: #aa0b35;
 }
-

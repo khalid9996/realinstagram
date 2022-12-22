@@ -21,8 +21,8 @@ const Register = () => {
     setDisabled(disabled? (false):(true))
   }
 
-return <div className="login__page">
-    <div className="login__window">
+return <div className="register__page">
+    <div className="register__window">
       <form onSubmit={handleSubmit}>
         <div className="logo__div"><GrInstagram className="ig__logo"/><span>Instagram</span></div>
         <div className="input__div">
