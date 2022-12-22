@@ -1,0 +1,102 @@
+.login__page {
+    width: 100%;
+    height: 100vh;
+    background-color: #2b2b2b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.login__window {
+    height: 600px;
+    width: 500px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.login__window > form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo__div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+.logo__div > span {
+    font-size: xx-large;
+    margin-top: 8px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+
+.ig__logo {
+    width: 80px;
+    height: 80px;
+    color: #cd486b;
+}
+
+.input__div {
+    width: 70%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+}
+
+.input__div > input {
+    padding: 10px;
+    border-radius: 4px;
+    width: 70%;
+    outline: none;
+    border: 1px solid rgb(56, 56, 56);
+}
+
+.input__div > span {
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.login__window > form > button {
+    width: 70%;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    background-color: #cd486b;
+    color: white;
+    font-size: medium;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.notdisabled {
+    background-color: #ce0f42 !important;
+}
+
+.notdisabled:hover {
+    background-color: #a0002b !important;
+}
+
+.terms__div {
+    width: 70%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 8px;
+}
+
+.terms__div > span {
+    font-size: small;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 10px;
+}
