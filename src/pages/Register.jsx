@@ -2,16 +2,8 @@ import React from "react";
 import './register.css'
 import {GrInstagram} from "react-icons/gr"
 import { useState } from "react";
-
-
-const handleSubmit = async (event) => {
-  event.preventDefault()
-  console.log("Submit Clicked")
-}
-
-
-
-
+import { auth } from "../firebase";
+import { createUserWithEmailAndPassword } from "firebase/auth";
 
 const Register = () => {
   const [email, setEmail] = useState('');
@@ -19,6 +11,27 @@ const Register = () => {
   const [disabled, setDisabled] = useState(true)
   const handleChange = () => {
     setDisabled(disabled? (false):(true))
+  }
+
+
+  const handleSubmit = async (event) => {
+    event.preventDefault()
+    console.log(email)
+    console.log(password)
+    createUserWithEmailAndPassword(auth, email, password)
+    .then((userCredential) => {
+      // Signed in 
+      console.log("Signed In")
+      const user = userCredential.user;
+      console.log(`User Credential : ${user}`)
+      // ...
+    })
+    .catch((error) => {
+      const errorCode = error.code;
+      const errorMessage = error.message;
+      console.log(`Code: ${errorCode} Message: ${errorMessage}`)
+      // ..
+    });
   }
 
 return <div className="register__page">
