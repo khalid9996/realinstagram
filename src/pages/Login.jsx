@@ -2,16 +2,29 @@ import React from "react";
 import './login.css'
 import {GrInstagram} from "react-icons/gr"
 import { useState } from "react";
+import {auth} from "../firebase"
+import { signInWithEmailAndPassword } from "firebase/auth";
 
 
-const handleSubmit = async (event) => {
-  event.preventDefault()
-  console.log("Submit Clicked")
-}
 
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const handleSubmit = async (event) => {
+    event.preventDefault()
+    await signInWithEmailAndPassword(auth, email, password)
+    .then((userCredential) => {
+      // Signed in 
+      const user = userCredential.user;
+      console.log(user)
+      // ...
+    })
+    .catch((error) => {
+      const errorCode = error.code;
+      const errorMessage = error.message;
+      console.log(`Error Code : ${errorCode} and Message : ${errorMessage}`)
+    });
+  }
  
 return <div className="login__page">
     <div className="login__window">

@@ -18,12 +18,12 @@ const Register = () => {
     event.preventDefault()
     console.log(email)
     console.log(password)
-    createUserWithEmailAndPassword(auth, email, password)
+    await createUserWithEmailAndPassword(auth, email, password)
     .then((userCredential) => {
       // Signed in 
       console.log("Signed In")
       const user = userCredential.user;
-      console.log(`User Credential : ${user}`)
+      console.log(user)
       // ...
     })
     .catch((error) => {

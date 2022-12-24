@@ -5,18 +5,18 @@ import { FiHeart } from "react-icons/fi";
 import { FaRegComment } from "react-icons/fa";
 import { IoPaperPlaneOutline } from "react-icons/io5";
 
-const Post = () => {
+const Post = ({user,posturl}) => {
   return (
     <div className="post">
       <div className="post__head">
         <div className="post__profile">
           <img src={me} alt="" />
         </div>
-        <span>khalid.khnz</span>
+        <span>{user}</span>
       </div>
 
       <div className="post__img">
-        <img src={me} alt="" />
+        <img src={me} alt="post" />
       </div>
 
       <div className="interact__icons">
